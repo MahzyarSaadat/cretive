@@ -1,0 +1,70 @@
+@media only screen and (max-width: 900px) {
+    header nav ul{
+        display: none;
+    }
+
+    header nav ul a{
+        padding: .2em;
+    }
+
+    header nav ul a.active:hover {
+        background-color: none;
+    }
+
+    header nav ul.active{
+        padding-top: .5em;
+        display: flex;
+        gap: .3em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    header nav #menu{
+        padding: .3em;
+        color: #eee;
+        opacity: 1;
+    }
+
+    header #navigation-bar .inside-nav.active{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+    }
+
+    header .top-header{
+        padding: 13em 6em;
+        background-position-x: center;
+    }
+
+    header .about-section{
+        padding: 5em 7em;
+    }
+
+    header .service-section .icons{
+        flex-wrap: wrap;
+        padding-top: 5em;
+        gap: 0;
+    }
+
+    header .service-section .icons .icon-container{
+        width: calc(100% /2);
+    }
+
+    header .portfolio-section .img-container{
+        width: calc(100% / 2);
+    }
+
+    header .contact-section p{
+        padding: 0px 4em;
+    }
+
+    header .contact-section{
+        padding: 5em 3em;
+    }
+
+    header .contact-section .form-section input{
+        width: 100%;
+    }
+}

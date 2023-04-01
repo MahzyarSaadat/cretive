@@ -1,0 +1,29 @@
+@media only screen and (max-width : 600px){
+    body > header > .top-header > h1{
+        font-size: 3em;
+    }
+
+    header .top-header{
+        padding: 13em 3em;
+    }
+
+    header .about-section{
+        padding: 5em 1em;
+    }
+
+    header .service-section .icons .icon-container{
+        width: 100%;
+    }
+
+    header .portfolio-section .img-container{
+        width: 100%;
+    }
+
+    header .contact-section p{
+        padding: 0px 1em;
+    }
+
+    header nav{
+        padding: 2em 3em 1em;
+    }
+}

@@ -1,0 +1,247 @@
+/*-------------- navigation style  ---------------*/
+
+header nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em 10em 1em;
+    z-index: 2 !important;
+    transition: 0.4s;
+}
+
+header nav #menu{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+header nav .fa-bars{
+    font-size: 1.3em;
+    padding: .2em;
+}
+
+
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: #bbbbbb;
+    font-weight: bold;
+    padding: 1.2em;
+    border-radius: 20px;
+}
+
+header nav ul a.active{
+    color: #000 !important;
+}
+
+header nav ul a.active:hover{
+    background-color: #b8b8b8 !important;
+}
+
+
+/*-------------- header(top-section) styles -----------------*/
+
+header .top-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 13em 23em;
+   background:
+        linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), 
+        url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
+}
+
+body > header > .top-header > h1{
+    font-size: 4em;
+}
+
+.top-header .line{
+    margin-top: 2em;
+    border-top: 3px solid #d35400;
+    width: 3em;
+}
+
+.top-header button{
+    margin-top: 2em;
+    font-size: .8em;
+    padding: 1.5em;
+    border-radius: 1.7em;
+    outline: none;
+    border: none;
+    background-color: #d35400;
+    color: #fff;
+}
+
+.top-header button:hover{
+    background: #a54200;
+}
+
+/* --------------------------- start about section -------------------------- */
+
+header .about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 20em;
+    text-align: center;
+    background-color: #e67e22;
+}
+
+header .about-section .line{
+    margin-top: 2em;
+    border-top: 3px solid #fff;
+    width: 3em;
+}
+
+header .about-section button{
+    margin-top: 2em;
+    background-color: #fff;
+    border: none;
+    padding: 1em;
+    border-radius: 1.6em;
+}
+
+/* ----------------------------- start sevice section ---------------------------- */
+
+header .service-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    padding: 5em 3em
+}
+
+header .service-section .line{
+    margin-top: 2em;
+    border-top: 3px solid #d35400;
+    width: 3em;
+}
+
+header .service-section .icons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+header .service-section .icons .icon-container{
+    padding: 2em 2em;
+}
+
+header .service-section .icons .icon-container i{
+    color: #e67e22;
+}
+
+/*----------------- start portfolio section --------------------*/
+header .portfolio-section {
+    background-color: #2c3e50;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .portfolio-section .img-container{
+    cursor: pointer;
+    width: calc(100% / 3);
+}
+
+header .portfolio-section .img-container .project-category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #b65a09a2;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+header .portfolio-section .img-container:hover .project-category{
+    opacity: 1;
+}
+
+/*------------------------- start contact section ------------------ */
+
+header .contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 13em;
+}
+
+header .contact-section p{
+    text-align: center;
+    padding: 0px 10em;
+}
+
+header .contact-section .line{
+    margin-top: 2em;
+    border-top: 3px solid #d35400;
+    width: 3em;
+}
+
+header .contact-section .form-section input{
+    cursor: text;
+    width: 100%;
+    outline: none;
+    padding: 1em .5em .5em;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #b8b8b8;
+}
+
+header .contact-section .form-section  input:focus{
+    outline: 3px solid #e68836c4;
+}
+
+header .contact-section .form-section  label{
+    cursor: text;
+    font-size: 1.4em;
+    top: 21px;
+    left: 15px;
+    transition: .4s;
+}
+
+input:focus ~ label, input:valid ~ label, textarea:focus ~ label , textarea:valid ~ label{
+    font-size: 1em !important;
+    top: 3px !important;
+    color: #b8b8b8;
+}
+
+header .contact-section .form-section .text-area textarea{
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    font-size: 1.2em;
+    outline: none;
+    padding: 1.5em .5em .5em;
+}
+
+header .contact-section .form-section button{
+    background: #e67e22;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
